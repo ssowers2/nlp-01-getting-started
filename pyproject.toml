@@ -22,6 +22,7 @@ dependencies = [
     "matplotlib",      # WHY: Core visualization library for plots used in exploratory analysis.
     "wordcloud",       # WHY: Quick visual exploration of word frequencies in text corpora.
     #"spacy", # WHY: Industrial-strength NLP library for tokenization and linguistic analysis.
+    "markupsafe>=3.0.3",
 ]
 
 [project.optional-dependencies]
@@ -119,6 +120,16 @@ convention = "google" # ALT: "numpy" (choose one convention project-wide)
 # REQ.BUILD: A build backend MUST be declared to enable package discovery.
 build-backend = "setuptools.build_meta"
 requires = ["setuptools>=80.9.0"]
+
+[dependency-groups]
+dev = [
+    "click>=8.3.1",
+    "mkdocstrings[python]>=1.0.3",
+    "pre-commit>=4.5.1",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "zensical>=0.0.25",
+]
 
 [tool.setuptools]
 # REQ.PACKAGES: Package discovery MUST be rooted at src/.
