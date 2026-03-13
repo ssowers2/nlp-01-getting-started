@@ -131,3 +131,13 @@ git push -u origin main
 ## Example Artifact (Output)
 
 ![Word Cloud Example](docs/images/word_cloud_example.png)
+
+## Professional Modification
+
+For this project, I modified the dataset used for the text analysis.
+Originally, the program analyzed the Wikipedia page for Natural Language Processing.
+I changed the input URL to use the Artificial Intelligence Wikipedia page instead:
+
+https://en.wikipedia.org/wiki/Artificial_intelligence
+
+This modification allowed the program to analyze a different dataset and produce different word frequency results and visualizations. The results reflected common terms related to artificial intelligence such as "intelligence," "artificial," and "machine."
